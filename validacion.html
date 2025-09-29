@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validacion</title>
+</head>
+<body>
+    <header>
+        <h1>Validacion</h1>
+    </header>
+    <nav>
+        <a href="index.html">--Inicio--</a> | 
+        <a href="lenguajes.html">--Lenguajes--</a> | 
+        <a href="registro.html">--Registro--</a>
+    </nav>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Formulario</legend>
+                <label>
+                    Correo
+                    <input type="email" name="correo" placeholder="...@correo.com" required>
+                </label>
+                <br><br>
+                <label>
+                    Contraseña
+                    <input type="password" name="contraseña" pattern=".{6-12}" placeholder="6 a 12 caracteres" required>
+                </label>
+                <br><br>
+                <label>
+                    Confirmar contraseña
+                    <input type="password" name="contraseña" pattern=".{6-12}" placeholder="confirmar" required>
+                </label>
+                <br><br>
+                <button type="button">Guardar</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
