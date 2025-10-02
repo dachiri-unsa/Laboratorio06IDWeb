@@ -1,0 +1,76 @@
+<!-- Laboratorio Nro 06 -->
+<!-- Autor: Achiri Cuevas Daniel Cooper -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+</head>
+<body>
+    <header>
+        <h1>Cursos</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a> | 
+        <a href="registro.html">Registro</a> | 
+        <a href="lenguajes.html">Lenguajes</a> | 
+        <a href="validacion.html">Validacion</a>
+    </nav>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Formulario de inscripcion a un curso</legend>
+                <label>
+                    Nombres
+                    <input type="text" name="nombre" placeholder="Nombres..." required>
+                </label>
+                <br><br>
+                <label>
+                    Apellidos
+                    <input type="text" name="apellidos" placeholder="Apellidos..." required>
+                </label>
+                <br><br>
+                <label>
+                    DNI
+                    <input type="number" name="dni" placeholder="..." required>
+                </label>
+                <br><br>
+                <label>
+                    Correo
+                    <input type="email" name="correo" placeholder="...@correo.com" required>
+                </label>
+                <br><br>
+                <label>Seleccionar el curso</label>
+                <input type="radio" id="idweb" name="cursos">
+                <label for="idweb">IDWEB</label>
+                <input type="radio" id="dsoo" name="cursos">
+                <label for="dsoo">CSS</label>
+                <input type="radio" id="bs" name="cursos">
+                <label for="bs">Base de datos</label>
+                <br><br>
+
+                <label>Seleccionar modalidad</label>
+                <input type="radio" id="presencial" name="modalidad">
+                <label for="presencial">Presencial</label>
+                <input type="radio" id="virtual" name="modalidad">
+                <label for="virtual">Virtual</label>
+                <br><br>
+
+                <label>Horarios disponibles</label>
+                <input type="radio" id="mañana">
+                <label for="mañana">Mañana</label>
+                <input type="radio" id="tarde">
+                <label for="tarde">Tarde</label>
+                <input type="radio" id="noche">
+                <label for="noche">Noche</label>
+                <br><br>
+
+                <button type="submit" name="enviar">Enviar</button>
+                <br><br>
+                <button type="reset">Restablecer</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
